@@ -355,7 +355,7 @@
   }
 }
 .docs {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .docs__link {
@@ -581,6 +581,9 @@ h3 {
 }
 
 @media screen and (min-width: 992px) {
+  .docs {
+    padding-bottom: 120px;
+  }
   .docs h1 {
     font-size: 40px;
     margin-bottom: 32px;
