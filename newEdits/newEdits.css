@@ -354,3 +354,253 @@
     text-align: center;
   }
 }
+.docs {
+  padding-bottom: 20px;
+}
+
+.docs__link {
+  transition: all 0.36s ease-in-out;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+  line-height: 1.18;
+}
+
+.docs__link:hover {
+  color: var(--primary-hover-color);
+}
+
+.docs__link svg {
+  flex: 0 0 auto;
+  fill: currentColor;
+  margin-right: 16px;
+}
+
+.docs h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+
+.info-table {
+  width: 100%;
+  max-width: 863px;
+  border-top: 1px solid #dcdcdc;
+  margin-bottom: 26px;
+  border-spacing: 0;
+}
+
+.info-table td {
+  padding: 16px 0;
+  border-bottom: 1px solid #dcdcdc;
+  vertical-align: top;
+}
+
+.info-table td a {
+  transition: all 0.36s ease-in-out;
+  color: var(--primary-color);
+}
+
+.info-table td a:hover {
+  color: var(--primary-hover-color);
+}
+
+.info-table td:nth-child(1) {
+  font-size: 12px;
+  color: var(--gray-color);
+  width: calc(35.5% + 1%);
+  padding-right: 16px;
+}
+.info-table td:nth-child(2) {
+  font-size: 14px;
+  color: var(--black-color);
+  padding-left: 16px;
+}
+
+.row {
+  --bs-gutter-x: 16px;
+  --bs-gutter-y: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-top: calc(var(--bs-gutter-y) * -1);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: var(--bs-gutter-y);
+  max-width: 100%;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.docs .download-wrap {
+  min-width: auto;
+  width: 100%;
+}
+
+.docs .download-wrap:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  max-width: 865px;
+}
+
+.data-table {
+  max-width: 865px;
+  overflow: auto;
+}
+
+.data-table table {
+  width: 100%;
+  border-spacing: 0;
+  min-width: 630px;
+}
+
+.data-table th {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--gray-color);
+  padding: 8px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.data-table th:nth-child(1) {
+  padding-left: 10px;
+  width: 5.8%;
+}
+.data-table th:nth-child(2) {
+  width: 24.9%;
+}
+.data-table th:nth-child(3) {
+  width: 25%;
+}
+.data-table th:nth-child(4) {
+  padding-right: 10px;
+}
+
+.data-table td {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--gray-color);
+  padding: 16px 16px;
+  border-bottom: 1px solid #dcdcdc;
+  vertical-align: top;
+}
+
+.data-table td:nth-child(1) {
+  padding-left: 10px;
+}
+
+.data-table td:nth-child(4) {
+  color: var(--black-color);
+  padding-right: 68px;
+  position: relative;
+}
+.data-table td:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  top: 16px;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5716 15.9782L18.1934 20.3565L13.8151 15.9782' stroke='%238C64D8' stroke-width='2'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.dropdown-btn {
+  transition: height 0.25s ease;
+}
+
+.dropdown-btn.active {
+  background-color: #f7f7f7;
+}
+
+.dropdown-btn.active td:nth-child(4)::after {
+  transform: rotateX(180deg);
+}
+
+.dropdown-btn.active td {
+  border-bottom: none;
+}
+
+.dropdown {
+  display: none;
+  -webkit-transition: height 0.25s ease;
+  -o-transition: height 0.25s ease;
+  transition: height 0.25s ease;
+  overflow: hidden;
+}
+
+.dropdown.active {
+  display: table-row;
+}
+
+.dropdown td {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: var(--gray-color);
+  padding-top: 0;
+}
+
+.dropdown td ul {
+  padding-left: 20px;
+}
+
+.dropdown td:nth-child(2) {
+  padding-right: 68px;
+}
+
+@media screen and (min-width: 1200px) {
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .docs .download-wrap {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .docs h1 {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+  .info-table {
+    margin-bottom: 56px;
+  }
+  .info-table td:nth-child(1) {
+    font-size: 14px;
+  }
+  .info-table td:nth-child(2) {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown td:nth-child(2) {
+    padding-right: 16px;
+  }
+}
