@@ -510,6 +510,7 @@ h3 {
   position: relative;
 }
 .data-table td:nth-child(4)::after {
+  transition: all 0.36s ease-in-out;
   content: '';
   position: absolute;
   display: block;
@@ -524,7 +525,7 @@ h3 {
 }
 
 .dropdown-btn {
-  transition: height 0.25s ease;
+  cursor: pointer;
 }
 
 .dropdown-btn.active {
@@ -541,10 +542,6 @@ h3 {
 
 .dropdown {
   display: none;
-  -webkit-transition: height 0.25s ease;
-  -o-transition: height 0.25s ease;
-  transition: height 0.25s ease;
-  overflow: hidden;
 }
 
 .dropdown.active {
